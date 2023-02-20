@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unique Identification of 50,000+ Virtual Reality Users from Head & Hand Motion Data | Berkeley RDI</title>
+    <meta name="description" content="With the recent explosive growth of interest and investment in virtual reality (VR) and the so-called 'metaverse,' public attention has rightly shifted toward the unique security and privacy threats that these platforms may pose. While it has long been known that people reveal information about themselves via their motion, the extent to which this makes an individual globally identifiable within virtual reality has not yet been widely understood. In this study, we show that a large number of real VR users (N=55,541) can be uniquely and reliably identified across multiple sessions using just their head and hand motion relative to virtual objects. After training a classification model on 5 minutes of data per person, a user can be uniquely identified amongst the entire pool of 50,000+ with 94.33% accuracy from 100 seconds of motion, and with 73.20% accuracy from just 10 seconds of motion. This work is the first to truly demonstrate the extent to which biomechanics may serve as a unique identifier in VR, on par with widely used biometrics such as facial or fingerprint recognition.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="metaverse.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Metaverse Research @ <img src="img/rdi-sm.png" height="30"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="https://rdi.berkeley.edu">RDI Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://rdi.berkeley.edu/research">Research Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Metaverse Research
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/metadata">MetaData</a></li>
+                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/metaguard">MetaGuard</a></li>
+                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/metaverse-sok">Privacy SoK</a></li>
+                <li><a class="dropdown-item active" href="https://rdi.berkeley.edu/vr-identification">Identification</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="https://rdi.berkeley.edu/metaverse">View All</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="carousel" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-img" style="background-image: url('img/ident.png')"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-shadow mt-0 mb-3">Unique Identification of 50,000+ Virtual Reality Users from Head & Hand Motion Data</h5>
+            <p><a class="btn btn-primary" href="https://arxiv.org/abs/2302.08927" target="_blank"><i class="fa fa-file-lines"></i>&nbsp; Read Paper</a> &nbsp; <a class="btn btn-primary" href="https://github.com/MetaGuard/Identification" target="_blank"><i class="fab fa-github"></i>&nbsp; View Repo</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-dark text-white py-4">
+      <div class="container text-left">
+        <div class="row">
+          <div class="col-2">
+            <p class="mt-0 mb-0">DATA</p>
+            <h4>3.96 TB</h4>
+          </div>
+          <div class="col-2">
+            <p class="mt-0 mb-0">USERS</p>
+            <h4>55,541</h4>
+          </div>
+          <div class="col-2">
+            <p class="mt-0 mb-0">COUNTRIES</p>
+            <h4>40+</h4>
+          </div>
+          <div class="col-2">
+            <p class="mt-0 mb-0">VR DEVICES</p>
+            <h4>20+</h4>
+          </div>
+          <div class="col-2">
+            <p class="mt-0 mb-0">REPLAYS</p>
+            <h4>2,669,886</h4>
+          </div>
+          <div class="col-2">
+            <p class="mt-0 mb-0">SESSIONS</p>
+            <h4>713,013</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+		<div class="bg-secondary text-white mt-0 mb-0">
+			<div class="container features py-4 mb-4 text-center text-lg-start">
+				<div class="row align-items-center">
+					<div class="col-lg-8">
+						<p><b>As seen in:</b></p>
+						<a href="https://www.forbes.com/sites/dylansloan/2022/08/09/worried-your-phone-is-spying-on-you-just-wait-until-youre-inside-it/?sh=7251bd955794" target="_blank">
+							<img src="img/forbes.png" height="60" style="margin-right: 16px;" />
+						</a>
+						<a href="https://www.theregister.com/2022/07/29/metaverse_privacy_study" target="_blank">
+							<img src="img/register.png" height="70" style="margin-right: 16px;" />
+						</a>
+						<a href="https://cryptovillage.org/" target="_blank">
+							<img src="img/cpv.jpg" height="70" style="border-radius: 50%;" />
+						</a>
+					</div>
+					<div class="col-lg-4">
+						<p class="mt-5 mt-lg-0"><b>We appreciate the support of:</b></p>
+						<a href="https://rdi.berkeley.edu/" target="_blank">
+							<img src="img/rdi.jpg" height="70" style="border-radius: 50%; margin-right: 16px;" />
+						</a>
+						<a href="https://nsf.gov/" target="_blank">
+							<img src="img/nsf.png" height="70" style="border-radius: 50%; margin-right: 16px;" />
+						</a>
+						<a href="http://npsc.org/" target="_blank">
+							<img src="img/npsc.png" height="70" style="border-radius: 50%; margin-right: 16px;" />
+						</a>
+						<a href="https://www.hertzfoundation.org/" target="_blank">
+							<img src="img/hertz.jpg" height="70" style="border-radius: 50%;" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+    -->
+    <div class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3">
+            <img src="img/shot1.png" class="w-100 rounded">
+          </div>
+          <div class="col-lg-6" style="font-size: 16.5px;">
+            <p class="text-secondary">2023 &nbsp;|&nbsp; Vivek Nair &middot; Wenbo Guo &middot; Justus Mattern &middot; Rui Wang &middot; James F. O’Brien &middot; Louis Rosenberg &middot; Dawn Song &nbsp;|&nbsp; https://doi.org/10.48550/arXiv.2302.08927</p>
+            <p class="text-justify">With the recent explosive growth of interest and investment in virtual reality (VR) and the so-called "metaverse," public attention has rightly shifted toward the unique security and privacy threats that these platforms may pose. While it has long been known that people reveal information about themselves via their motion, the extent to which this makes an individual globally identifiable within virtual reality has not yet been widely understood. In this study, we show that a large number of real VR users (N=55,541) can be uniquely and reliably identified across multiple sessions using just their head and hand motion relative to virtual objects. After training a classification model on 5 minutes of data per person, a user can be uniquely identified amongst the entire pool of 50,000+ with 94.33% accuracy from 100 seconds of motion, and with 73.20% accuracy from just 10 seconds of motion. This work is the first to truly demonstrate the extent to which biomechanics may serve as a unique identifier in VR, on par with widely used biometrics such as facial or fingerprint recognition.</p>
+          </div>
+          <div class="col-lg-3">
+            <img src="img/shot2.png" class="w-100 rounded">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+    <div class="bg-dark text-white">
+      <div class="container">
+        <div class="row align-items-center mb-5 py-5">
+          <div class="col-md-6">
+            <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/uURwQYgWFlo' frameborder='0' allowfullscreen></iframe></div>
+          </div>
+          <div class="col-md-6">
+            <h1>MetaData at XRSI</h1>
+            <p>MetaData and MetaGuard are already helping to shape metaverse safety and privacy standards. Watch an excerpt from an invited presentation about MetaGuard at the eXtended Reality Safety Initiative (<a href="https://xrsi.org/" target="_blank">XRSI</a>) Privacy &amp; Safety Working Group.</p>
+            <br>
+            <p class="mt-5 mt-lg-0"><b>We appreciate the support of:</b></p>
+            <a href="https://rdi.berkeley.edu/" target="_blank">
+              <img src="img/rdi.jpg" height="70" style="border-radius: 50%; margin-right: 16px;" />
+            </a>
+            <a href="https://nsf.gov/" target="_blank">
+              <img src="img/nsf.png" height="70" style="border-radius: 50%; margin-right: 16px;" />
+            </a>
+            <a href="http://npsc.org/" target="_blank">
+              <img src="img/npsc.png" height="70" style="border-radius: 50%; margin-right: 16px;" />
+            </a>
+            <a href="https://www.hertzfoundation.org/" target="_blank">
+              <img src="img/hertz.jpg" height="70" style="border-radius: 50%;" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    -->
+    <div>
+      <div class="container py-5 text-center">
+        <div class="row align-items-center">
+          <div class="col-md-4 py-5 py-md-0">
+            <img src="img/051-FIG-Motion.svg" class="w-100" />
+          </div>
+          <div class="col-md-8 ps-md-5 text-md-start">
+            <h4 class="mb-3">Motion Features</h4>
+            <p class="text-justify">Motion data (telemetry) is the primary source of data for user identification and inference in VR. Each frame of telemetry data encodes 3D position and orientation coordinates across each of the three tracked objects. Replacing the three Euler angles with four quaternion elements and summarizing each of these 21 data streams using five summary statistics, namely the minimum, maximum, mean, median, and standard deviation, results in a 105-dimensional motion feature vector.</p>
+          </div>
+        </div>
+        <div class="row align-items-center mt-5">
+          <div class="col-md-4 py-5 py-md-0 order-md-last">
+            <img src="img/053-FIG-Context.svg" class="w-100" />
+          </div>
+          <div class="col-md-8 pe-md-5 text-md-start">
+            <h4>Context Features</h4>
+            <p class="text-justify">We found 22 features that most accurately characterize movement relative to a single event. These features include, for example, the position, orientation, type, and color of the object, the angle, speed, location, and accuracy of the motion, and the relative distance in both space and time. These context features and 105 motion features corresponding to the one-second intervals before and after the event, totalling 232 dimensions, can be used to identify users with a high degree of accuracy.</p>
+          </div>
+        </div>
+        <div class="row align-items-center mt-5 mb-5">
+          <div class="col-md-4 py-5 py-md-0">
+            <img src="img/082-FIG-Features.svg" class="w-100" />
+          </div>
+          <div class="col-md-8 ps-md-5 text-md-start">
+            <h4>Results</h4>
+            <p class="text-justify">After training a classification model on 5 minutes of data per person, a user can be uniquely identified amongst the entire pool of 50,000+ with 94.33% accuracy from 100 seconds of motion, and with 73.20% accuracy from just 10 seconds of motion. Even with a single sample generated from just 2 seconds of telemetry data, the correct user out of 50,000 is identified about 48.45% of the time. Users with 5 or less total replays submitted were harder to identify, while users with 100 or more replays could be identified with over 99.5% accuracy. While static measurements comprise many of the most important features, they account for only 22.9% of the overall performance of the model. Motion features constitute 73.9% of all entropy gain, while contextual features compose the remaining 3.2%.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <h5 class="mb-4"><i>Authors:</i></h5>
+        <a style="display: inline-block" width="120px" href="https://nair.me">
+          <img src="img/vivek.jpg" height="120" class="rounded-circle" />
+          <p style="color: #fff; text-decoration: none; outline: none;">Vivek Nair</p>
+        </a>
+        <a style="display: inline-block" width="120px" href="https://henrygwb.github.io/">
+          <img src="img/wenbo.jpg" height="120" class="rounded-circle" />
+          <p style="color: #fff; text-decoration: none; outline: none;">Wenbo Guo</p>
+        </a>
+        <a style="display: inline-block" width="120px" href="https://justusmattern.github.io/">
+          <img src="img/justus.png" height="120" class="rounded-circle" />
+          <p style="color: #fff; text-decoration: none; outline: none;">Justus Mattern</p>
+        </a>
+        <a style="display: inline-block" width="120px" href="https://github.com/Rui-Wang-813">
+          <img src="img/rui.jfif" height="120" class="rounded-circle" />
+          <p style="color: #fff; text-decoration: none; outline: none;">Rui Wang</p>
+        </a>
+        <a style="display: inline-block" width="120px" href="http://obrien.berkeley.edu/">
+          <img src="img/james.jfif" height="120" class="rounded-circle" />
+          <p style="color: #fff; text-decoration: none; outline: none;">James F. O'Brien</p>
+        </a>
+        <a style="display: inline-block" width="120px" href="https://unanimous.ai/staff-item/louis-rosenberg-phd/">
+          <img src="img/louis.jfif" height="120" class="rounded-circle" />
+          <p style="color: #fff; text-decoration: none; outline: none;">Louis Rosenberg</p>
+        </a>
+        <a style="display: inline-block" width="120px" href="https://dawnsong.io">
+          <img src="img/dawn.jpg" height="120" class="rounded-circle" />
+          <p style="color: #fff; text-decoration: none; outline: none;">Dawn Song</p>
+        </a>
+      </div>
+    </div>
+    <div class="bg-dark text-white text-center py-2">
+      <div class="container">
+        <p class="m-0">Copyright &copy;2023 UC Regents &nbsp;|&nbsp; Email us at <a href="mailto:rdi@berkeley.edu">rdi@berkeley.edu</a>.</p>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
